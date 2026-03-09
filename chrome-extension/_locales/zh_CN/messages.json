@@ -1,0 +1,36 @@
+
+{
+  "appName": {
+    "message": "Figma 网页复制助手"
+  },
+  "appDesc": {
+    "message": "一键复制网页转换为可编辑的 Figma 设计稿，支持任何网站，无需Figma插件，免费使用"
+  },
+  "captureBtn": {
+    "message": "复制到 Figma"
+  },
+  "subtext": {
+    "message": "一键复制网页转换为可编辑的 Figma 设计稿"
+  },
+  "statusReady": {
+    "message": "准备就绪"
+  },
+  "statusSending": {
+    "message": "指令已发送..."
+  },
+  "statusSuccess": {
+    "message": "✅ 已复制！去Figma粘贴"
+  },
+  "statusError": {
+    "message": "❌ 失败: "
+  },
+  "statusRetry": {
+    "message": "正在重新连接..."
+  },
+  "statusFailRefresh": {
+    "message": "连接失败，请刷新页面"
+  },
+  "websiteBtn": {
+    "message": "访问官网"
+  }
+}

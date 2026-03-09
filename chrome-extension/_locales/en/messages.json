@@ -1,0 +1,36 @@
+
+{
+  "appName": {
+    "message": "Figma Web Copy Assistant"
+  },
+  "appDesc": {
+    "message": "One-click copy web pages to editable Figma designs, supports any website, no Figma plugin needed, free to use"
+  },
+  "captureBtn": {
+    "message": "Copy to Figma"
+  },
+  "subtext": {
+    "message": "One-click copy web page to editable Figma design"
+  },
+  "statusReady": {
+    "message": "Ready"
+  },
+  "statusSending": {
+    "message": "Command sent..."
+  },
+  "statusSuccess": {
+    "message": "✅ Copied! Paste in Figma"
+  },
+  "statusError": {
+    "message": "❌ Failed: "
+  },
+  "statusRetry": {
+    "message": "Reconnecting..."
+  },
+  "statusFailRefresh": {
+    "message": "Failed, please refresh page"
+  },
+  "websiteBtn": {
+    "message": "Website"
+  }
+}
