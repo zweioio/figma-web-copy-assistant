@@ -1,4 +1,4 @@
-# Figma Web Copy Assistant (Figma 网页复制助手)
+# Copy web to Figma
 
 [English](#english) | [中文](#chinese)
 
@@ -7,7 +7,7 @@
 <a name="english"></a>
 ## 🇬🇧 English
 
-**One-click copy web pages to editable Figma designs.**
+**One-click copy of a webpage and conversion into an editable Figma design.**
 
 Supports any website, no Figma plugin needed, completely free to use.
 
@@ -43,7 +43,7 @@ Supports any website, no Figma plugin needed, completely free to use.
 ### Usage
 
 1.  Navigate to any website you want to copy.
-2.  Click the **Figma Web Copy Assistant** icon in your Chrome toolbar.
+2.  Click the **Copy web to Figma** icon in your Chrome toolbar.
 3.  Click the **Copy to Figma** button.
 4.  Wait for the process to complete (the page will automatically scroll).
 5.  Once you see the "Copied!" success message, go to Figma and press `Ctrl+V` (or `Cmd+V`) to paste.
@@ -89,7 +89,7 @@ Supports any website, no Figma plugin needed, completely free to use.
 ### 使用方法
 
 1.  打开您想要复制的任何网页。
-2.  点击 Chrome 工具栏中的 **Figma 网页复制助手** 图标。
+2.  点击 Chrome 工具栏中的 **Copy web to Figma** 图标。
 3.  点击 **复制到 Figma (Copy to Figma)** 按钮。
 4.  等待处理完成（页面会自动滚动到底部）。
 5.  当看到 "已复制 (Copied!)" 的成功提示后，打开 Figma，按下 `Ctrl+V` (或 `Cmd+V`) 即可粘贴。
