@@ -16,13 +16,14 @@ Supports any website, no Figma plugin needed, completely free to use.
 ### Features
 
 - **One-Click Capture**: Easily convert any web page into a Figma-ready design.
-- **Smart DOM Optimization (New in v1.2)**: Intercepts clipboard data to flatten deeply nested `div`/`span` wrappers, making Figma layers incredibly clean and easy to edit.
-- **CJK Font Auto-Fix (New in v1.2)**: Automatically detects Chinese/Japanese/Korean text and replaces missing fonts with `PingFang SC` or `Noto Sans SC`, preventing the dreaded Figma missing font boxes.
+- **Smart DOM Optimization**: Intercepts clipboard data to flatten deeply nested `div`/`span` wrappers, making Figma layers incredibly clean and easy to edit.
+- **CJK Font Auto-Fix**: Automatically detects Chinese/Japanese/Korean text and replaces missing fonts with `PingFang SC` or `Noto Sans SC`, preventing the dreaded Figma missing font boxes.
 - **High Fidelity**: Captures layout, styles, fonts, and images accurately.
 - **Smart Handling**:
   - Automatically scrolls to capture full-page content.
   - Handles sticky headers and lazy-loaded images intelligently.
   - Fixes layout shifts during capture.
+- **Responsive UI Support**: Capture elements or full pages directly.
 - **Multi-Language Support**: English and Chinese (Simplified) interface support.
 - **Privacy Focused**: Runs locally in your browser, minimal permissions required.
 
