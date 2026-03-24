@@ -65,21 +65,14 @@
             // This fixes the issue where "Recapture" gets "Select" icon after returning from Select mode
             btn.classList.remove('custom-icon', 'icon-browser', 'icon-select', 'icon-success', 'icon-close');
 
-            // Recapture Button
-            if (text.includes('重新')) {
+            // EXACT MATCHING to prevent partial matches causing all icons to turn into checkmarks
+            if (text === 'Recapture Web Page' || text === '重新复制网页') {
                 btn.classList.add('custom-icon', 'icon-browser');
-            }
-            
-            // Select Button
-            if (text.includes('选择')) {
+            } else if (text === 'Select Web Element' || text === '复制网页元素') {
                 btn.classList.add('custom-icon', 'icon-select');
-            }
-
-            // Close Button
-            if (text.trim() === '') {
-                if (btn.querySelector('svg')) {
-                    btn.classList.add('custom-icon', 'icon-close');
-                }
+            } else if (text.trim() === '' && btn.querySelector('svg')) {
+                // Close Button
+                btn.classList.add('custom-icon', 'icon-close');
             }
         });
 
@@ -90,7 +83,7 @@
             const text = el.textContent || "";
             
             // Select Element Status
-            if (text.includes('选择元素')) {
+            if (text === 'Select element to copy' || text === '选择要复制的元素') {
                  let container = el;
                  if (!el.querySelector('svg')) container = el.parentElement;
                  
@@ -100,10 +93,10 @@
             }
 
             // Copied Status
-            if (text.includes('已复制')) {
+            if (text.includes('Copied!') || text.includes('已复制！')) {
                 // If this is the "Choose action" banner, we DO NOT want to apply the icon to the container
                 // because there is no icon for the text itself, only for the buttons.
-                if (text.includes('选择操作')) {
+                if (text.includes('Choose action') || text.includes('选择操作')) {
                      return; 
                 }
 
