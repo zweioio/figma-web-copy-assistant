@@ -135,6 +135,24 @@
         const SERIF_FONTS = new Set(['Georgia', 'Times New Roman', 'Times', 'Palatino', 'Garamond']);
         const PASSTHROUGH_TAGS = new Set(['DIV', 'SPAN', 'SECTION', 'ARTICLE', 'MAIN', 'ASIDE', 'HEADER', 'FOOTER', 'NAV']);
 
+        // --- Font Mapping Table ---
+        // Maps common web-specific or missing fonts to Figma-safe equivalents
+        const FONT_MAP = {
+            'system-ui': 'Inter',
+            '-apple-system': 'Inter',
+            'BlinkMacSystemFont': 'Inter',
+            'Segoe UI': 'Inter',
+            'Roboto': 'Roboto',
+            'Helvetica Neue': 'Helvetica Neue',
+            'Arial': 'Arial',
+            'sans-serif': 'Inter',
+            'Google Sans': 'Inter',
+            'Google Sans Text': 'Inter',
+            'Open Sans': 'Open Sans',
+            'Lato': 'Lato',
+            'Montserrat': 'Montserrat'
+        };
+
         // --- Helpers ---
         function collectText(node) {
             if (!node || typeof node !== 'object') return '';
@@ -178,7 +196,16 @@
                     return;
                 }
 
-                // Apply CJK Fix
+                // Apply Font Mapping for English/System fonts
+                const fonts = ff.split(',').map(f => f.trim().replace(/^["']|["']$/g, ''));
+                for (let i = 0; i < fonts.length; i++) {
+                    if (FONT_MAP[fonts[i]]) {
+                        node.styles.fontFamily = FONT_MAP[fonts[i]] + ', ' + ff;
+                        break; // Stop at first mapped font
+                    }
+                }
+
+                // Apply CJK Fix (Overwrites mapping if text contains CJK)
                 const text = collectText(node);
                 if (text && CJK_RE.test(text)) {
                     if (!node.styles) node.styles = {};
